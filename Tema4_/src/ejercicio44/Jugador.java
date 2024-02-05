@@ -15,5 +15,10 @@ public class Jugador {
 	}
 	protected void setEquipo(EquipoCombate equipo) {
 		this.equipo = equipo;
+	}
+	
+	@Override
+	public String toString() {
+		return "Jugador [nombre=" + nombre + ", equipo=" + equipo + "]";
 	}	
 }
