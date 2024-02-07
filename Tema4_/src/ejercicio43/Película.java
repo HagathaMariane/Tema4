@@ -1,5 +1,6 @@
 package ejercicio43;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Película {
@@ -14,7 +15,7 @@ public class Película {
 	    
 	    //Estoy creando la lista
 	    public Película()  {
-	    	actores=new ArrayList <>;
+	    	actores = new ArrayList <>();
 	    }
 	    
 	     // (tendremos que tener métodos get() y set() para ellos):

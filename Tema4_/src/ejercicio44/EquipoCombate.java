@@ -1,5 +1,6 @@
 package ejercicio44;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -9,16 +10,28 @@ public class EquipoCombate {
 	private Integer totalPuntosVida;
 	
 	public EquipoCombate () {
-		tropa = new ArrayList<>() ;
+		//Estoy creando la lista
+		tropa = new ArrayList<>();
 		totalPuntosVida = 0;
 	
 	}
 	public void añadirPersonaje(Personaje personaje) {
-	}
-	if (tropa.size()<5 && !troà.contaisn(personaje)) {
+	if (tropa.size()<5 && !tropa.contains(personaje)) {
 		tropa.add(personaje);
 		totalPuntosVida += personaje.getPuntosVida();
-		
+	}
+	}
+	protected List<Personaje> getTropa() {
+		return tropa;
+	}
+	protected void setTropa(List<Personaje> tropa) {
+		this.tropa = tropa;
+	}
+	protected Integer getTotalPuntosVida() {
+		return totalPuntosVida;
+	}
+	protected void setTotalPuntosVida(Integer totalPuntosVida) {
+		this.totalPuntosVida = totalPuntosVida;
 	}
 	@Override
 	public int hashCode() {

@@ -1,6 +1,6 @@
 package ejercicio44;
 
-public class Parasito extrends Personaje  {
+public class Parasito extends Personaje  {
 	
 	private static final Integer PUNTOS_VIDA = 200;
 	private static final Integer DAÑO = 2;
